@@ -650,3 +650,6 @@ impl Cgka {
         self.pcs_key_from_hashes(pcs_key_hash, update_op_hash)
     }
 }
+
+#[cfg(all(test, feature = "std"))]
+mod concurrent_removals_test;
